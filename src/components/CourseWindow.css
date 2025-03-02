@@ -1,0 +1,54 @@
+.window-container .course-info-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.window-container .course-info-form-input-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.delete-course-button .trash-sign {
+  aspect-ratio: 1;
+  height: 80%;
+  width: auto;
+  background: var(--delete-color);
+} 
+
+.window-footer-button-container .left-buttons, .window-footer-button-container .right-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course-window {
+  width: 50vw;
+}
+
+.course-window > .window-scrollable {
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.course-window > .window-scrollable::-webkit-scrollbar {
+  width: 10px;
+}
+
+.course-window > .window-scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.course-window > .window-scrollable::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+  border-radius: 5px;
+}
+
+.course-window > .window-scrollable::-webkit-scrollbar-thumb:hover {
+  background: rgb(89, 89, 89);
+}
+
+.course-window > .window-scrollable::-webkit-scrollbar-thumb:active {
+  background: rgb(78, 78, 78);
+}

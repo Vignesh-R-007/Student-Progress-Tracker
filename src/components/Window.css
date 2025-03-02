@@ -1,0 +1,130 @@
+.window-background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,var(--window-background-alpha));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-container {
+  background: var(--window-background);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.16);
+}
+
+.window-full-height {
+  height: 80%;
+}
+
+.center-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.window-scrollable {
+  max-height: 79.8%;
+  /* overflow-y: scroll; May want to remove later */
+}
+
+.window-footer {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.window-container form {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.window-container form label {
+  color: var(--window-input-label-color);
+  font-size: 2.25rem;
+  background: none;
+  margin: 0 10px;
+}
+
+.window-container form input {
+  outline: none;
+  -webkit-appearance: none;
+  background-color: var(--window-input-background);
+  text-align: center;
+  width: 284px;
+  height: 62px;
+  border-radius: 10px 10px 0 0;
+  font-size: 2.25rem;
+  color: var(--window-input-color);
+  border: none;
+  border-bottom: 2px solid #656565;
+}
+
+.window-container form .stacked-input > input {
+  border: 2px solid #656565;
+}
+
+.window-container form .stacked-input > label {
+  border: 2px solid #656565;
+  border-top: none;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+
+.window-container button {
+  border: none;
+  border-radius: 15px;
+  border-width: 2px;
+  border-style: solid;
+  background: none;
+  width: 150px;
+  height: 50px;
+  font-size: 1.8125rem;
+  font-weight: semi-bold;
+  margin: 0 15px;
+}
+
+.window-container .delete-button {
+  --delete-color: #c03240;
+  color: var(--delete-color);
+  border-color: var(--delete-color);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.window-container .cancel-button {
+  --cancel-color: #c03240;
+  color: var(--cancel-color);
+  border-color: var(--cancel-color);
+}
+
+.window-footer-button-container {
+  width: 88.5%;
+  margin-left: 5.75%;
+  margin-right: 5.74%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-footer-button-container .left-half {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.window-container .finish-button {
+  --finish-color: #00cf0e;
+  color: var(--finish-color);
+  border-color: var(--finish-color);
+}
+
