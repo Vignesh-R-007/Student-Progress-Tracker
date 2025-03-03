@@ -7,7 +7,7 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="header-left">
-          <span className="header-title"><span>C</span>ommon <span>S</span>ense <span>C</span>oursebook</span>
+          <span className="header-title"><span>S</span>tudent <span>P</span>rogress <span>T</span>racker</span>
         </div>
 
         <div className="header-right">
